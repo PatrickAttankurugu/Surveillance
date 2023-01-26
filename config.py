@@ -1,0 +1,16 @@
+# APPLICATION CONFIGURATION
+from pathlib import Path
+
+
+APP_NAME = "People Counter and Emotion Detector"
+APP_VERSION = "0.1.0"
+
+# CROSS-ORIGIN RESOURCE SHARING CONFIGURATION
+CORS_ALLOW_ORIGINS = ["*"]
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_METHODS = ["*"]
+CORS_ALLOW_HEADERS = ["*"]
+
+# DATABASE CONFIGURATION
+SQLITE_DB_PATH = Path("db") / "database.sqlite"
+VIDEOS_BASE_PATH = Path("db") / "videos"
